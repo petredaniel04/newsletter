@@ -31,6 +31,11 @@ class NewsletterController extends Controller
         ]);
     }
 
+    public function actionSubscribe()
+    {
+        return $this->render('subscribe');
+    }
+
     /**
      * Validate newsletter e-mail
      */
