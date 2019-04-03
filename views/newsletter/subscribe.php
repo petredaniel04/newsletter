@@ -36,6 +36,15 @@ use yii\grid\GridView;
         max-width: 100%;
     }
 
+    .summary {
+        float: left;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
 
 </style>
 
@@ -63,6 +72,7 @@ use yii\grid\GridView;
             <div class="row">
                 <div class="col-md-12"
                      style="text-align: right; margin-top: -5px; margin-bottom: -15px; height: 55px;">
+                    <a style="float: left;" class="btn btn-info" href="<?php echo Url::toRoute('newsletter/subscribe'); ?>">Reload records</a>
                     <label class="control-label" for="page-size">Display on page</label>
                     <select style="height: 34px;" name="page_size" id="page-size"
                             onchange="setPageSize($(this).val());">
